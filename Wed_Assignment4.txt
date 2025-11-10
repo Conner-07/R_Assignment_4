@@ -1,0 +1,99 @@
+
+R version 4.4.2 (2024-10-31) -- "Pile of Leaves"
+Copyright (C) 2024 The R Foundation for Statistical Computing
+Platform: aarch64-apple-darwin20
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+[R.app GUI 1.81 (8462) aarch64-apple-darwin20]
+
+[Workspace restored from /Users/connerstarkey/.RData]
+[History restored from /Users/connerstarkey/.Rapp.history]
+
+> setwd("/Users/connerstarkey/Informatics_573")
+> 
+> getwd()
+[1] "/Users/connerstarkey/Informatics_573"
+> 
+> list.files()
+  [1] "assignment2.py"                            "chr1_GL383518v1_alt.fa"                    "chr1_GL383519v1_alt.fa"                    "chr1_GL383520v2_alt.fa"                   
+  [5] "chr1_KI270706v1_random.fa"                 "chr1_KI270707v1_random.fa"                 "chr1_KI270708v1_random.fa"                 "chr1_KI270709v1_random.fa"                
+  [9] "chr1_KI270710v1_random.fa"                 "chr1_KI270711v1_random.fa"                 "chr1_KI270712v1_random.fa"                 "chr1_KI270713v1_random.fa"                
+ [13] "chr1_KI270714v1_random.fa"                 "chr1_KI270759v1_alt.fa"                    "chr1_KI270760v1_alt.fa"                    "chr1_KI270761v1_alt.fa"                   
+ [17] "chr1_KI270762v1_alt.fa"                    "chr1_KI270763v1_alt.fa"                    "chr1_KI270764v1_alt.fa"                    "chr1_KI270765v1_alt.fa"                   
+ [21] "chr1_KI270766v1_alt.fa"                    "chr1_KI270892v1_alt.fa"                    "chr10_GL383545v1_alt.fa"                   "chr10_GL383546v1_alt.fa"                  
+ [25] "chr10_KI270824v1_alt.fa"                   "chr10_KI270825v1_alt.fa"                   "chr10.fa"                                  "chr11_GL383547v1_alt.fa"                  
+ [29] "chr11_JH159136v1_alt.fa"                   "chr11_JH159137v1_alt.fa"                   "chr11_KI270721v1_random.fa"                "chr11_KI270826v1_alt.fa"                  
+ [33] "chr11_KI270827v1_alt.fa"                   "chr11_KI270829v1_alt.fa"                   "chr11_KI270830v1_alt.fa"                   "chr11_KI270831v1_alt.fa"                  
+ [37] "chr11_KI270832v1_alt.fa"                   "chr11_KI270902v1_alt.fa"                   "chr11_KI270903v1_alt.fa"                   "chr11_KI270927v1_alt.fa"                  
+ [41] "chr11.fa"                                  "chr12_GL383549v1_alt.fa"                   "chr12_GL383550v2_alt.fa"                   "chr12_GL383551v1_alt.fa"                  
+ [45] "chr12_GL383552v1_alt.fa"                   "chr12_GL383553v2_alt.fa"                   "chr12_GL877875v1_alt.fa"                   "chr12_GL877876v1_alt.fa"                  
+ [49] "chr12_KI270833v1_alt.fa"                   "chr12_KI270834v1_alt.fa"                   "chr12_KI270835v1_alt.fa"                   "chr12_KI270836v1_alt.fa"                  
+ [53] "chr12_KI270837v1_alt.fa"                   "chr12_KI270904v1_alt.fa"                   "chr12.fa"                                  "chr13_KI270838v1_alt.fa"                  
+ [57] "chr13_KI270839v1_alt.fa"                   "chr13_KI270840v1_alt.fa"                   "chr13_KI270841v1_alt.fa"                   "chr13_KI270842v1_alt.fa"                  
+ [61] "chr13_KI270843v1_alt.fa"                   "chr13.fa"                                  "chr14_GL000009v2_random.fa"                "chr14_GL000194v1_random.fa"               
+ [65] "chr14_GL000225v1_random.fa"                "chr14_KI270722v1_random.fa"                "chr14_KI270723v1_random.fa"                "chr14_KI270724v1_random.fa"               
+ [69] "chr14_KI270725v1_random.fa"                "chr14_KI270726v1_random.fa"                "chr14_KI270844v1_alt.fa"                   "chr14_KI270845v1_alt.fa"                  
+ [73] "chr14_KI270846v1_alt.fa"                   "chr14_KI270847v1_alt.fa"                   "chr14.fa"                                  "chr15_GL383554v1_alt.fa"                  
+ [77] "chr15_GL383555v2_alt.fa"                   "chr15_KI270727v1_random.fa"                "chr15_KI270848v1_alt.fa"                   "chr15_KI270849v1_alt.fa"                  
+ [81] "chr15_KI270850v1_alt.fa"                   "chr15_KI270851v1_alt.fa"                   "chr15_KI270852v1_alt.fa"                   "chr15_KI270905v1_alt.fa"                  
+ [85] "chr15_KI270906v1_alt.fa"                   "chr15.fa"                                  "chr16_GL383556v1_alt.fa"                   "chr16_GL383557v1_alt.fa"                  
+ [89] "chr16_KI270728v1_random.fa"                "chr16_KI270853v1_alt.fa"                   "chr16_KI270854v1_alt.fa"                   "chr16_KI270855v1_alt.fa"                  
+ [93] "chr16_KI270856v1_alt.fa"                   "chr16.fa"                                  "chr17_GL000205v2_random.fa"                "chr17_GL000258v2_alt.fa"                  
+ [97] "chr17_GL383563v3_alt.fa"                   "chr17_GL383564v2_alt.fa"                   "chr17_GL383565v1_alt.fa"                   "chr17_GL383566v1_alt.fa"                  
+[101] "chr17_JH159146v1_alt.fa"                   "chr17_JH159147v1_alt.fa"                   "chr17_JH159148v1_alt.fa"                   "chr17_KI270729v1_random.fa"               
+[105] "chr17_KI270730v1_random.fa"                "chr17_KI270857v1_alt.fa"                   "chr17_KI270858v1_alt.fa"                   "chr17_KI270859v1_alt.fa"                  
+[109] "chr17_KI270860v1_alt.fa"                   "chr17_KI270861v1_alt.fa"                   "chr17_KI270862v1_alt.fa"                   "chr17_KI270907v1_alt.fa"                  
+[113] "chr17_KI270908v1_alt.fa"                   "chr17_KI270909v1_alt.fa"                   "chr17_KI270910v1_alt.fa"                   "chr17.fa"                                 
+[117] "chr18_GL383567v1_alt.fa"                   "chr18_GL383568v1_alt.fa"                   "chr18_GL383569v1_alt.fa"                   "chr18_GL383570v1_alt.fa"                  
+[121] "chr18_GL383571v1_alt.fa"                   "chr18_GL383572v1_alt.fa"                   "chr18_KI270863v1_alt.fa"                   "chr18_KI270864v1_alt.fa"                  
+[125] "chr18_KI270911v1_alt.fa"                   "chr18_KI270912v1_alt.fa"                   "chr18.fa"                                  "chr19_GL000209v2_alt.fa"                  
+[129] "chr19_GL383573v1_alt.fa"                   "chr19_GL383574v1_alt.fa"                   "chr19_GL383575v2_alt.fa"                   "chr19_GL383576v1_alt.fa"                  
+[133] "chr19_GL949746v1_alt.fa"                   "chr19_GL949747v2_alt.fa"                   "chr19_GL949748v2_alt.fa"                   "chr19_GL949749v2_alt.fa"                  
+[137] "chr19_GL949750v2_alt.fa"                   "chr19_GL949751v2_alt.fa"                   "chr19_GL949752v1_alt.fa"                   "chr19_GL949753v2_alt.fa"                  
+[141] "chr19_KI270865v1_alt.fa"                   "chr19_KI270866v1_alt.fa"                   "chr19_KI270867v1_alt.fa"                   "chr19_KI270868v1_alt.fa"                  
+[145] "chr19_KI270882v1_alt.fa"                   "chr19_KI270883v1_alt.fa"                   "chr19_KI270884v1_alt.fa"                   "chr19_KI270885v1_alt.fa"                  
+[149] "chr19_KI270886v1_alt.fa"                   "chr19_KI270887v1_alt.fa"                   "chr19_KI270888v1_alt.fa"                   "chr19_KI270889v1_alt.fa"                  
+[153] "chr19_KI270890v1_alt.fa"                   "chr19_KI270891v1_alt.fa"                   "chr19_KI270914v1_alt.fa"                   "chr19_KI270915v1_alt.fa"                  
+[157] "chr19_KI270916v1_alt.fa"                   "chr19_KI270917v1_alt.fa"                   "chr19_KI270918v1_alt.fa"                   "chr19_KI270919v1_alt.fa"                  
+[161] "chr19_KI270920v1_alt.fa"                   "chr19_KI270921v1_alt.fa"                   "chr19_KI270922v1_alt.fa"                   "chr19_KI270923v1_alt.fa"                  
+[165] "chr19_KI270929v1_alt.fa"                   "chr19_KI270930v1_alt.fa"                   "chr19_KI270931v1_alt.fa"                   "chr19_KI270932v1_alt.fa"                  
+[169] "chr19_KI270933v1_alt.fa"                   "chr19_KI270938v1_alt.fa"                   "chr19.fa"                                  "data_summary.txt"                         
+[173] "fetch_chr1_secondary.sh"                   "README.md"                                 "Wed_Terminal_Assignment_ConnerStarkey.zip" "Wed_Terminal_Assignment.zip"              
+> 
+> source("Assignment4.R")
+Error: RStudio not running
+> 
+> setwd("/Users/connerstarkey/Informatics_573")
+> source("Assignment4.R")
+Using FASTA file: chr1_GL383518v1_alt.fa 
+Sequence length: 182439 
+10th base: c 
+758th base: a 
+79th base of reverse complement: G 
+500th-800th bases of reverse complement:
+ NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNTAATCATGACTTTCCTATTTGTTGTGTTTCTTGGACAGGTTTATACTAAATAAGAAATTATGTAGTATACTAAATAATACTANNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN 
+> 
+> setwd("/Users/connerstarkey/Informatics_573")
+> source("Assignment4.R")
+Using FASTA file: chr1_GL383518v1_alt.fa 
+Sequence length: 182439 
+10th base: C 
+758th base: A 
+79th base of reverse complement: G 
+500th-800th bases of reverse complement:
+ GATCCACCCGCCTTGGCCTACCATAGTGCTGGGATTATAGGCGTGAGCCACTGTGCCTGGCCAGAATTAGACGTAGATTTTAATCATGACTTTCCTATTTGTTGTGTTTCTTGGACAGGTTTATACTAAATAAGAAATTATGTAGTATACTAAATAATACTATTTTTTTTGAAATGGAGTGTCTCTCTGTCACCCAGGCTGGAGTGCAGTGGCGGGATCTCGGCTTACCGCAACCTCCGCCTCCCAGGTTCAAGCAATTCTCCTGTCACAGCCTCCCAAATAGCTGGGACTACAGGCACAC 
+> 
+> 
